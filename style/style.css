@@ -57,6 +57,75 @@
   font-size: 1.37rem;
   margin-top: 13px;
 }
-.banner-right {
-  flex: 1;
+.banner-right img {
+  /* max-width: 100%; */
+}
+
+/* our plants */
+/* upper-parts */
+.our-pants {
+  margin-top: 95px;
+}
+.upper-part h4 {
+  font-weight: 1140;
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+.upper-part p {
+  font-size: 2 rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 49px;
+}
+
+/* lower-part */
+
+.lower-part .card p {
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #111111;
+  margin-top: 30px;
+}
+.lower-part .card h3 {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+.btn {
+  background-color: #e95a08;
+  font-size: 16px;
+  font-weight: 600;
+  color: aliceblue;
+  padding: 19px 87px;
+  margin-top: 30px;
+  border: none;
+}
+.lower-part .card img {
+  height: 270px;
+  width: 100%;
+}
+.upper-part {
+  text-align: center;
+}
+.lower-part {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 17px;
+}
+.card {
+  text-align: center;
+}
+.lilly-flower {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 576px) {
+  .nav-item {
+    display: none;
+  }
+  .nav-item:last-child {
+    display: list-item;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
 }
