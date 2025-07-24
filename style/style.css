@@ -118,6 +118,61 @@
   max-width: 1140px;
   margin: 0 auto;
 }
+
+/* <!-- flower and pants lover --> */
+
+/* image section left */
+
+.flower-lover {
+  margin-top: 200px;
+  padding: 50px;
+}
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1140px;
+  gap: 50px;
+}
+.image-section-left {
+  position: relative;
+  flex: 1;
+}
+
+.main-img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  width: 200px;
+}
+.content-section-right {
+  flex: 1;
+}
+
+/* content section right */
+
+.content-section-right h2 {
+  font-weight: bold;
+  font-size: 3.4rem;
+}
+.content-section-right ul li {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* responsive for mobile */
+
 @media screen and (max-width: 576px) {
   .nav-item {
     display: none;
@@ -127,5 +182,9 @@
   }
   .banner {
     flex-direction: column-reverse;
+  }
+  .lower-part {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
