@@ -5,7 +5,9 @@
   margin: 0;
   font-family: "Noto Serif", serif;
 }
-
+body {
+  /* overflow-x: hidden; */
+}
 /* nav style */
 
 .nav-item {
@@ -47,6 +49,14 @@
   align-items: center;
   max-width: 1140px;
   margin: 161px auto;
+  align-items: center;
+}
+.banner-left {
+  flex: 1;
+}
+.banner-right {
+  flex: 1;
+  text-align: right;
 }
 .banner h2 {
   font-weight: bold;
@@ -58,21 +68,26 @@
   margin-top: 13px;
 }
 .banner-right img {
-  /* max-width: 100%; */
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  display: block;
 }
 
 /* our plants */
 /* upper-parts */
+
 .our-pants {
-  margin-top: 95px;
+  /* margin-top: 95px; */
+  /* margin-top: 10px; */
 }
 .upper-part h4 {
   font-weight: 1140;
-  font-size: 3rem;
+  font-size: 45px;
   margin-bottom: 16px;
 }
 .upper-part p {
-  font-size: 2 rem;
+  font-size: 22px;
   font-weight: 700;
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 49px;
@@ -100,8 +115,11 @@
   border: none;
 }
 .lower-part .card img {
-  height: 270px;
+  /* height: 270px;
+  width: 100%; */
   width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 .upper-part {
   text-align: center;
@@ -124,7 +142,7 @@
 /* image section left */
 
 .flower-lover {
-  margin-top: 200px;
+  margin-top: 150px;
   padding: 50px;
 }
 .main-div {
@@ -147,11 +165,11 @@
 }
 .badge {
   position: absolute;
-  top: 10px;
-  left: 85%;
+  top: 5px;
+  left: 95%;
   transform: translate(-50%, -50%);
   height: auto;
-  width: 200px;
+  width: 220px;
 }
 .content-section-right {
   flex: 1;
@@ -159,6 +177,9 @@
 
 /* content section right */
 
+.content-section-right {
+  flex: 1;
+}
 .content-section-right h2 {
   font-weight: bold;
   font-size: 3.4rem;
@@ -174,17 +195,51 @@
 /* responsive for mobile */
 
 @media screen and (max-width: 576px) {
+  /* nav  */
+
   .nav-item {
     display: none;
   }
   .nav-item:last-child {
     display: list-item;
   }
+
+  /* banner */
+
   .banner {
     flex-direction: column-reverse;
   }
-  .lower-part {
+  .banner h2 {
+    margin-top: 30px;
+  }
+
+  .banner-right img {
+    display: block;
+    object-fit: contain;
+  }
+
+  /* Our plants */
+  .upper-part{
+    
+  }
+
+  /* lilly flower ---card  */
+  /* .lower-part {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 16px;
+  } */
+
+  /* flower */
+
+  /* .main-div {
+    flex-direction: column;
   }
+  .badge {
+    display: none;
+  }
+  .flower-lover {
+    margin-top: 10px;
+  } 
 }
