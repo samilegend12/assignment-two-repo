@@ -291,6 +291,48 @@
   text-decoration: none;
 }
 
+/* second-last */
+
+.second-last {
+  background-image: url("../assets/news-letter-bg.png");
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: white;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.second-last h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.subscribe-box {
+  display: flex;
+  justify-content: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.subscribe-box input {
+  padding: 12px;
+  width: 70%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.subscribe-box button {
+  background-color: #f4511e;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 576px) {
   /* nav  */
 
@@ -318,6 +360,7 @@
   /* Our plants */
 
   /* lilly flower ---card  */
+
   */ .lower-part {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -335,5 +378,11 @@
   }
   .flower-lover {
     margin-top: 10px;
+  }
+
+  /* shop-now */
+  .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
